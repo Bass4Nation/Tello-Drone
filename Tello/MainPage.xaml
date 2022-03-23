@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="Tello.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Tello"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Button Content="Start" Margin="411,278,0,0" VerticalAlignment="Top" Click="Button_Start"/>
+        <Button Content="Take off" Margin="160,428,0,0" VerticalAlignment="Top" Click="Button_TakeOff"/>
+        <Button Content="Land" Margin="160,528,0,0" VerticalAlignment="Top" Click="Button_Land"/>
+        <Button Content="Forward" Margin="400,368,0,0" VerticalAlignment="Top" Click="Button_Forward"/>
+        <Button Content="Backward" Margin="400,480,0,0" VerticalAlignment="Top" Click="Button_Backward"/>
+        <Button Content="Left" Margin="355,420,0,0" VerticalAlignment="Top" Click="Button_Left"/>
+        <Button Content="Right" Margin="482,420,0,0" VerticalAlignment="Top" RenderTransformOrigin="5,0.625" Click="Button_Right"/>
+        <Button Content="Forward" Margin="405,580,0,0" VerticalAlignment="Top" Click="Button_FlipForward"/>
+        <Button Content="Backward" Margin="401,688,0,0" VerticalAlignment="Top" Click="Button_FlipBackward"/>
+        <Button Content="Left" Margin="351,628,0,0" VerticalAlignment="Top" Click="Button_FlipLeft"/>
+        <Button Content="Right" Margin="480,635,0,0" VerticalAlignment="Top" RenderTransformOrigin="5,0.625" Click="Button_FlipRight"/>
+        <Button Content="Down" Margin="562,460,0,0" VerticalAlignment="Top" RenderTransformOrigin="5,0.625" Click="Button_Down"/>
+        <Button Content="Up" Margin="562,400,0,0" VerticalAlignment="Top" RenderTransformOrigin="5,0.625" Click="Button_Up"/>
+        <Button Content="Stream On" Margin="650,393,0,0" VerticalAlignment="Top" RenderTransformOrigin="5,0.625" Click="Button_Start_Stream"/>
+        <Button Content="Stop Stream" Margin="650,445,0,0" VerticalAlignment="Top" RenderTransformOrigin="5,0.625" Click="Button_Stop_Stream"/>
+        <ToggleSwitch Name="TakeOffLand" Header="ToggleSwitch" Margin="170,250,0,0" VerticalAlignment="Top" Toggled="ToggleSwitch_Toggled"/>
+
+    </Grid>
+</Page>
